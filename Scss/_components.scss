@@ -50,3 +50,56 @@
         background-color: $gradient-color;
     }
 }
+
+.card {
+    width: 33.333%;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .card-overlay {
+        left: 0;
+    }
+
+    &-overlay {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        color: $gradient-color;
+        font-family: $third-font;
+        z-index: 10;
+        @extend %fullSpace;
+        @include flexLayout;
+        flex-direction: column;
+        transition: left .7s;
+
+        &-heading {
+            font-size: 80px;
+            @include textStyles(capitalize);
+        }
+
+        &-paragraph {
+            font-size: 40px;
+            margin-bottom: 30px;
+            @include textStyles(capitalize);
+        }
+
+        &-btn {
+            width: 150px;
+            height: 40px;
+            color: $primary-color;
+            background-color: $text-color;
+            border-radius: 10px;
+            border: none;
+            font-family: $third-font;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity: .7;
+    }
+}
