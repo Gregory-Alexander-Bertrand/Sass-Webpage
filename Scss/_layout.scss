@@ -64,3 +64,16 @@ header {
         flex-wrap: wrap;
     }
 }
+
+.footer {
+    padding: 70px 0;
+    @include flexLayout;
+    flex-direction: column;
+
+    &-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+}
