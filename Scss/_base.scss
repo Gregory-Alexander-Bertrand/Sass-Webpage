@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Elsie+Swash+Caps&display=swap');
 
 $primary-color: #b2d3c2;
 $border-color: #ffd8f0;
@@ -6,6 +7,7 @@ $gradient-color: #fef2ed;
 $text-color: #783d3d;
 
 $primary-font: 'Clicker Script';
+$secondary-font: 'Elsie Swash Caps';
 
 @mixin flexLayout {
     display: flex;
