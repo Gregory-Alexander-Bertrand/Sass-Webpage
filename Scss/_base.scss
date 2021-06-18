@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+$primary-color: #b2d3c2;
+$border-color: #ffd8f0;
+$gradient-color: #fef2ed;
+$text-color: #783d3d;
+
+$primary-font: 'Clicker Script';
+
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyles {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@mixin centering($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+}

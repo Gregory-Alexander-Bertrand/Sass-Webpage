@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border: 1px solid black;
+    background-image: url(https://images.unsplash.com/photo-1562483565-984444c3cf8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient($gradient-color, .8);
+
+    .brand {
+        display: flex;
+        align-items: center;
+        @include centering(20%);
+    }
+
+    .header-banner {
+       @include centering(70%);
+       text-align: center;
+    }
+}
