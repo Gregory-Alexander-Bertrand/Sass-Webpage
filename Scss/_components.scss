@@ -5,6 +5,12 @@
     width: 110px;
     height: 110px;
     text-decoration: none;
+
+    @media(max-width: 1000px) {
+        font-size: 50px;
+        width: 90px;
+        height: 90px;
+    }
 }
 
 .hamburger-menu {
@@ -37,6 +43,10 @@
     font-family: $primary-font;
     font-size: 100px;
     @include textStyles;
+
+    @media(max-width: 1000px) {
+        font-size: 50px;
+    }
 }
 
 .sub-name {
@@ -49,12 +59,26 @@
     font-family: $primary-font;
     font-size: 45px;
     margin-bottom: 40px;
+
+    @media(max-width: 1600px) {
+        font-size: 60px;
+    }
+
 }
 
 .sub-heading {
     color: $gradient-color;
     font-family: $primary-font;
     font-size: 45px;
+    text-align: center;
+
+    @media(max-width: 1600px) {
+        font-size: 60px;
+    }
+
+    @media(max-width: 1300px) {
+        font-size: 40px;
+    }
 }
 
 .main-btn {
@@ -102,12 +126,23 @@
         &-heading {
             font-size: 80px;
             @include textStyles(capitalize);
+
+            @media(max-width: 900px) {
+                font-size: 45px;
+                font-family: $primary-font;
+            }
         }
 
         &-paragraph {
             font-size: 40px;
             margin-bottom: 30px;
             @include textStyles(capitalize);
+
+            @media(max-width: 900px) {
+                font-size: 25px;
+                font-family: $primary-font;
+            }
+
         }
 
         &-btn {
@@ -120,6 +155,10 @@
             font-family: $third-font;
             font-size: 18px;
             cursor: pointer;
+
+            @media(max-width: 900px) {
+                font-family: $primary-font;
+            }
         }
     }
 
