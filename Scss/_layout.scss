@@ -19,11 +19,19 @@
     left: -50vw;
     transition: left .4s cubic-bezier(1, 0, 0, 1);
 
+    @media(max-width: 800px) {
+        display: none;
+    }
+
     .left-img {
         width: 50%;
         position: absolute;
         box-shadow: 0 15px 60px rgba($fifth-color, .4);
         opacity: .7;
+
+        @media(max-width: 1300px) {
+            width: 55%;
+        }
     }
 
     .left-img-1 {
@@ -48,6 +56,11 @@
     @include flexLayout;
     transition: right .4s cubic-bezier(1, 0, 0, 1);
 
+    @media(max-width: 800px) {
+        width: 100vw;
+        right: -100vw;
+    }
+
 }
 
 .nav-list {
@@ -69,6 +82,10 @@
         &:hover {
             color: $border-color;
             letter-spacing: 4px;
+        }
+
+        @media(max-width: 600px) {
+            font-size: 25px;
         }
     }
 }
@@ -109,6 +126,10 @@ header {
         display: flex;
         align-items: center;
         @include centering(20%);
+
+        @media(max-width: 500px) {
+            @include centering(15%);
+        }
     }
 
     .header-banner {
@@ -132,6 +153,10 @@ header {
             left: -100px;
         }
 
+        @media(max-width: 800px) {
+            display: none;
+        }
+
         img {
             width: 100%;
             height: 870px;
@@ -153,6 +178,10 @@ header {
 
         @media(max-width: 1300px) {
             padding: 0 50px;
+        }
+
+        @media(max-width: 800px) {
+            width: 100%;
         }
     }
 

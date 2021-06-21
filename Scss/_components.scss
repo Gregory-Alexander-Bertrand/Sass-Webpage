@@ -11,6 +11,13 @@
         width: 90px;
         height: 90px;
     }
+
+    @media(max-width: 500px) {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        border-width: 2px;
+    }
 }
 
 .hamburger-menu {
@@ -20,6 +27,8 @@
     top: 10%;
     right: 5%;
     z-index: 300;
+
+    
 
     .menu {
         @extend %fullSpace;
@@ -131,6 +140,14 @@
                 font-size: 45px;
                 font-family: $primary-font;
             }
+
+            @media(max-width: 650px) {
+                font-size: 18px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
+            }
         }
 
         &-paragraph {
@@ -141,6 +158,14 @@
             @media(max-width: 900px) {
                 font-size: 25px;
                 font-family: $primary-font;
+            }
+
+            @media(max-width: 650px) {
+                font-size: 18px;
+            }
+
+            @media(max-width: 500px) {
+                display: none;
             }
 
         }
@@ -158,6 +183,10 @@
 
             @media(max-width: 900px) {
                 font-family: $primary-font;
+            }
+
+            @media(max-width: 650px) {
+                font-style: 16px;
             }
         }
     }
